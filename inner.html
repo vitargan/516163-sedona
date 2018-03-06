@@ -1,125 +1,124 @@
 <!DOCTYPE html>
   <html lang="ru">
     <head>
-       <meta charset="utf-8">
-       <title>HTML Academy: Седона</title>
-       </head>
+         <meta charset="utf-8">
+         <title>HTML Academy: Седона</title>
+      </head>
     <body>
       <header class="main-header">
-         <nav class="content-header">
-        <ul class="header-nav">
-          <li><a class="nav-item" href="#">Информация</a></li>
-          <li><a class="nav-item" href="#">Фото и видео</a></li>
-          <li><a class="nav-item" href="#">Карта штата</a></li>
-          <li><a class="nav-item" href="#">Гостиницы</a></li>
-        </ul>
-          <div class="header-logo"><img class="logo-nav" src="http://placehold.it/150x100" alt=""></div>
+        <nav class="content-header">
+            <ul class="header-nav">
+              <li><a class="nav-item" href="#">Информация</a></li>
+              <li><a class="nav-item" href="#">Фото и видео</a></li>
+              <li><a class="nav-item" href="#">Карта штата</a></li>
+              <li><a class="nav-item">Гостиницы</a></li>
+           </ul>
+             <div class="header-logo">
+             	<a href="index.html">
+             		<img class="logo-nav" src="http://placehold.it/150x100" alt=""></a>
+             </div>
        </nav>
       </header>
       <main class="container">
+      	<h1 class="visually-hidden">Седона лучшее место на земле!!!</h1>
          <section class="selection-hotels">
-           <article class="infrastructure">
-             <span>Инфраструктура:</span>
-                <form action="#">
-                  <label for="basin">
+            <form action="#">
+                    <span class="Infrastructure">Инфраструктура:</span>
+               
+                 <label for="basin">
                     <input type="checkbox" id="basin" name="basin" value="бассейн">басейн
-                  </label>
-                  <label for="parking">
+                 </label>
+                 <label for="parking">
                     <input type="checkbox" id="parking" name="parking" value="парковка">парковка
-                  </label>
+                 </label>
                  <label for="wi-fi">
                    <input type="checkbox" id="wi-fi" name="wi-fi" value="wi-fi">wi-fi
                  </label>
-                </form>
-            </article>
-            <article class="Housing-type">
-              <span>Тип жилья:</span>
-                <form action="#">
+                  <span class="Housing-type">Тип жилья:</span>
+               
                  <label for="hotel">
                    <input type="checkbox" id="hotel" name="hotel" value="гостиница">гостиница
                  </label>
                  <label for="motel">
-                  <input type="checkbox" id="motel" name="motel" value="мотель">мотель
+                   <input type="checkbox" id="motel" name="motel" value="мотель">мотель
                  </label>
                  <label for="apartments">
-                   <input type="checkbox" id="apartments" name="apartments" value="апартаменты">апартаменты
+                    <input type="checkbox" id="apartments" name="apartments" value="апартаменты">апартаменты
                  </label>
-                </form>
-           </article>
-           <article class="cost">
-             <span>Стоимость в сутки (Р):</span>
-              <table class="cost-table">
-                <tr>
-                  <td>от 0</td>
-                  <td>до 3000</td>
-                </tr>
-             </table>
-              <a class="cost-btn" href="#">Показать</a>
-           </article>
+                  <span lass="cost">Стоимость в сутки (Р):</span>
+                    <div>от 0</div>
+                    <div>до 3000</div>
+                  <a class="cost-btn" href="#">Показать</a>
+              </form>
+          
          </section>
          <section class="examples-hotels">
-          <article class="sorting">
-            <span>Найдено:3</span>
-            <span>Сортировка:</span>
+         
+         <section class="sorting">
+            <span class="find">Найдено:3</span>
+            <span class="sorting-item">Сортировка:</span>
               <a href="#" class="sorting-price">по цене</a>
               <a href="#" class="sorting-type">по типу</a>
               <a href="#" class="sorting-rating">по по рейтингу</a>
-          </article>
-          <article class="options-hotels">
-            <div class="img-options-hotels"><img src="http://placehold.it/150x100" alt=""></div>
-            <div class="block-options-hotels">
-             <h3>Amara Resort & Spa</h3>
-               <table class="options-hotels-table">
-                <tr>
-                  <td>гостиница</td>
-                  <td>от 4000р.</td>
-                  </tr>
-               </table>
+          </section>
+            <article class="options-hotels">
+              <div class="img-options-hotels">
+              	<img src="http://placehold.it/150x100" alt="">
+              </div>
+              <div class="block-options-hotels">
+              <a href="#" class="hotel-name">
+              	<h3>Amara Resort & Spa</h3>
+              </a>
+                  <div class="options-hotels-housing">гостиница</div>
+                  <div class="options-hotels-price">от 4000р.</div>
                     <a class="options-btn-left" href="#">Подробнее</a>
                     <a class="options-btn-right" href="#">Забронировать</a>
-             <div class="options-hotels-rating"><span>Рейтинг: 8,5</span>     </div>
+               <span class="options-hotels-rating"> Рейтинг: 8,5</span>    
              </div>
-           </article>
-           <article class="options-hotels">
-            <div class="img-options-hotels"><img src="http://placehold.it/150x100" alt=""></div>
+             </article>
+             <article class="options-hotels">
+              <div class="img-options-hotels">
+              	<img src="http://placehold.it/150x100" alt="">
+              </div>
               <div class="block-options-hotels">
-                <h3>Desert Quail Inn</h3>
-                 <table class="options-hotels-table">
-                   <tr>
-                      <td>мотель</td>
-                      <td>от 3000р.</td>
-                    </tr>
-                 </table>
-                     <a class="options-btn-left" href="#">Подробнее</a>
-                     <a class="options-btn-right" href="#">Забронировать</a>
-               <div class="options-hotels-rating"><span>Рейтинг: 8,9</span></div>
-           </div>
-          </article>
-          <article class="options-hotels">
-              <div class="img-options-hotels"><img src="http://placehold.it/150x100" alt=""></div>
-               <div class="block-options-hotels">
-                 <h3>Villas at Poco Diablo</h3>
-                  <table class="options-hotels-table">
-                    <tr>
-                      <td>апартаменты</td>
-                      <td>от 2000р.</td>
-                    </tr>
-                  </table>
+                <a href="#" class="hotel-name">
+                	<h3>Desert Quail Inn</h3>
+                </a>
+                   <div class="options-hotels-housing">мотель</div>
+                   <div class="options-hotels-price">от 3000р.</div>
                    <a class="options-btn-left" href="#">Подробнее</a>
                    <a class="options-btn-right" href="#">Забронировать</a>
-                    <div class="options-hotels-rating"><span>Рейтинг: 9,2</span></div>
+                 <span class="optcions-hotels-rating">Рейтинг: 8,9</span>
+              </div>
+          </article>
+          <article class="options-hotels">
+              <div class="img-options-hotels">
+              	<img src="http://placehold.it/150x100" alt="">
+              </div>
+               <div class="block-options-hotels">
+                 <a href="#" class="hotel-name"><h3>Villas at Poco Diablo</h3></a>
+                    <div class="options-hotels-housing">апартаменты</div>
+                    <div class="options-hotels-price">от 2000р.</div>
+                    <a class="options-btn-left" href="#">Подробнее</a>
+                    <a class="options-btn-right" href="#">Забронировать</a>
+                   
+                   
+                    <span class="options-hotels-rating">Рейтинг: 9,2</span>
                 </div>
-       </article>
+        </article>
            </section>	
          </main>
           <footer>
-	          <span><a class="VISITSEDONA" href="#">#VISITSEDONA</a></span>
-	            <div class="social-footer">
-	              <a class="social-btn-tv social-btn" href="#">twitter</a>
-	              <a class="social-btn-fb social-btn" href="#">facebook </a>
-	              <a class="social-btn-yo social-btn" href="#">youtube</a>
-	   </div>
-	<div class="footer-logo"><img class="footer-img" src="http://placehold.it/150x100"  alt=""></div>
-         </footer> 
-    </body>
-</html>
+                <a class="visitsedona"  href="#">#visitsedona</a></span> 
+                   <div class="social-footer">
+                     <a class="social-btn-tv social-btn" href="#">twitter</a>
+                     <a class="social-btn-fb social-btn" href="#">facebook </a>
+                     <a class="social-btn-yo social-btn" href="#">youtube</a>
+                  </div>
+                  <div class="footer-logo">
+                  	<img class="footer-img" src="http://placehold.it/150x100"  alt="">
+                  </div>
+            </footer> 
+     </body>
+  </html>
+
