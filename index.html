@@ -6,6 +6,7 @@
        </head>
      <body>
        <header class="main-header">
+        <h2 class="visually-hidden">Меню сайта</h2>
          <nav class="content-header">
             <ul class="header-nav">
               <li><a class="nav-item" href="#">Информация</a></li>
@@ -14,7 +15,7 @@
               <li><a class="nav-item" href="inner.html">Гостиницы</a></li>
            </ul>
             <div class="header-logo">
-              <a href="index.html">
+              <a href="index.html" aria-label="ссылка на главную страницу">
                 <img class="logo-nav" src="img/index-logo.svg" width="138" height="70" alt="Логототип"></a>
             </div>
          </nav>
@@ -30,7 +31,8 @@
               </div>
           </section>
           <section class="advantages">
-           <section class="advantages-block">
+            <h2 class="visually-hidden">Приемущества отдыха в седоне</h2>
+            <section class="advantages-block">
               <div class="advantages-block-item">
                 <h3>Настоящий городок</h3>
                 <b>— №1 —</b>
@@ -41,15 +43,15 @@
               </div>
            </section>
           <section class="comfort">
-              <div class="services">
+              <div class="comfort-services">
                 <h3>Жилье</h3>
                 <p>Рекомендуем пожить в настоящем мотеле,<br>  все как в кино!</p>
               </div>
-              <div class="services">
+              <div class="comfort-services">
                 <h3>Еда</h3>
                 <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
               </div>
-              <div class="services">
+              <div class="comfort-services">
                 <h3>Сувениры</h3>
                 <p>Не только китайского,<br> но и местного производства!</p>
               </div>
@@ -65,7 +67,7 @@
               </div>
            </section>
            <section class="advantages-block">
-              <div class="advantages-block-">
+              <div class="advantages-block-item">
                 <h3>Небольшая площадь</h3>
                 <b>— №3 —</b>
                 <p>Все достопримечательности находятся очень близко</p>
@@ -84,24 +86,28 @@
            </section>
          </section>
            <section class="travel-date">
+              <div class="travel-date-item">
                 <h3>Заинтересовались?</h3>
 	              <p>Укажите предполагаемые даты поездки, <br>
 	               и мы покажем вам лучшие предложения гостиниц в седоне</p>
+              </div>
 	         </section>
              <article class="map">
+               <h2 class="visually-hidden">Как до нас добраться</h2>
                <img src="img/map.jpg" width="1200" height="593" alt="Карта седоны">
              </article>
 
        </main>
           <footer>
+            <h2 class="visually-hidden">Ссылки на социальные сети</h2>
             <a class="visitsedona"  href="#">#visitsedona</a>
               <div class="social-footer">
-                <a class="social-btn-tv social-btn" href="#">twitter</a>
-                <a class="social-btn-fb social-btn" href="#">facebook 
+                <a class="social-btn-tv social-btn" href="#" aria-label="twitter">twitter</a>
+                <a class="social-btn-fb social-btn" href="#" aria-label="facebook">facebook 
                 </a>
-                <a class="social-btn-yo social-btn" href="#">youtube</a>
+                <a class="social-btn-yo social-btn" href="#" aria-label="youtube">youtube</a>
               </div>
-                <a href="#" class="website">website by</a>
+                <a href="https://htmlacademy.ru/" class="website" aria-label="Сылка на сайт разработчика сайтов">website by</a>
               <div class="footer-logo">
                <img class="footer-img" src="img/logo-htmlacademy.svg" width="115" height="41"  alt="Логотип компании разработчика сайта">
               </div>
@@ -112,24 +118,20 @@
             <form class="popup-forma" action="https://echo.htmlacademy.ru" method="post">
               <ul class="popup-item">
                 <li>
-                 <label for="arrival-date">
-                  <span class="popup-arrival-date">дата заезда:</span>
+                 <label for="arrival-date">дата заезда:
                   <input type="date" id="arrival-date" name="arrival-date" value="24.04.2017">
                  </label>
                </li>
                <li>
-                <label for="date-departure">
-                  <span class="popup-date-departure">дата выезда:</span>
+                <label for="date-departure">дата выезда:
                   <input type="date" id="date-departure" name="departure-date" value="04.07.2017"> 
                 </label>
                </li>
               </ul>
-              <span class="popup-adults">Взрослые:</span>
-              <label for="adults">
+              <label for="adults">Взрослые:
                 <input type="number" id="adults" name="adults">
               </label> 
-              <span class="popup-adults">Дети:</span>
-              <label for="children">
+              <label for="children">Дети:
                 <input type="number" id="children" name="children">
               </label>
               <button class="popup-button" type="submit">Найти</button>
