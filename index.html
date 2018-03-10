@@ -22,11 +22,8 @@
         <main class="container">
          <h1 class="visually-hidden">Седона лучшее место на земле!!!</h1>
           <section class="main-logos">
-            <img src="img/welcome.png" width="188" height="45" alt="welcome">
-            <img src="img/to-the-gorgeous.png" width="176" height="30" alt="to the gorgeous">
-            <img src="img/sedona.png" width="458" height="78" alt="sedona">
-            <img src="img/because-the-grand-canyon-sucks_.png" width="296" height="80" alt="because the grand canyon sucks">
-              <div class="main-text">
+             <img src="img/inscriptions-against-the-background-of-mountains.png" width="458" height="352" alt="inscriptions against the-background of-mountains">  
+             <div class="main-text">
                 <h2>Седона — небольшой городок в Аризоне,<br> 
                   заслуживающий большего!</h2>
                 <p>Рассмотрим 5 причин, по которым Седона круче,<br>чем гранд каньон!</p>
@@ -40,13 +37,13 @@
                 <p>Седона—не аттракцин для туристов,<br> там течет своя жизнь</p>
               </div>
               <div class="advantages-block-img">
-                <img src="img/layer10.jpg" width="800" height="256" alt="Фото города">
+                <img src="img/city-photos.jpg" width="800" height="256" alt="Фото города">
               </div>
            </section>
           <section class="comfort">
               <div class="services">
                 <h3>Жилье</h3>
-                <p>Рекомендуем пожить в настоящеммотеле,<br>  все как в кино!</p>
+                <p>Рекомендуем пожить в настоящем мотеле,<br>  все как в кино!</p>
               </div>
               <div class="services">
                 <h3>Еда</h3>
@@ -59,7 +56,7 @@
           </section>
           <section class="advantages-block">
               <div class="advantages-block-img">
-                <img src="img/layer5.jpg" width="800" height="256"  alt="мост дьявола">
+                <img src="img/devil's-bridge.jpg" width="800" height="256"  alt="мост дьявола">
               </div>
               <div class="advantages-block-item">
                 <h3>Там есть мост дьявола</h3>
@@ -92,7 +89,7 @@
 	               и мы покажем вам лучшие предложения гостиниц в седоне</p>
 	         </section>
              <article class="map">
-               <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+               <img src="img/map.jpg" width="1200" height="593" alt="Карта седоны">
              </article>
 
        </main>
@@ -109,6 +106,35 @@
                <img class="footer-img" src="img/logo-htmlacademy.svg" width="115" height="41"  alt="Логотип компании разработчика сайта">
               </div>
           </footer> 
+          
+          <section class="popup">
+            <h2>Поиск гостиницы в седоне</h2>
+            <form class="popup-forma" action="https://echo.htmlacademy.ru" method="post">
+              <ul class="popup-item">
+                <li>
+                 <label for="arrival-date">
+                  <span class="popup-arrival-date">дата заезда:</span>
+                  <input type="date" id="arrival-date" name="arrival-date" value="24.04.2017">
+                 </label>
+               </li>
+               <li>
+                <label for="date-departure">
+                  <span class="popup-date-departure">дата выезда:</span>
+                  <input type="date" id="date-departure" name="departure-date" value="04.07.2017"> 
+                </label>
+               </li>
+              </ul>
+              <span class="popup-adults">Взрослые:</span>
+              <label for="adults">
+                <input type="number" id="adults" name="adults">
+              </label> 
+              <span class="popup-adults">Дети:</span>
+              <label for="children">
+                <input type="number" id="children" name="children">
+              </label>
+              <button class="popup-button" type="submit">Найти</button>
+             </form>
+          </section>
      </body>
   </html>
      
