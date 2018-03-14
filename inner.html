@@ -3,6 +3,9 @@
        <head>
           <meta charset="utf-8">
            <title>HTML Academy: Седона</title>
+           <link  type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+           <link  href="normalize/normalize.css" rel="stylesheet">
+           <link  href="css/main.css" rel="stylesheet">
        </head>
      <body>
        <header class="main-header">
@@ -46,7 +49,7 @@
                  </ul>
                </fieldset>
                <fieldset>
-               	<legend class="selection-hotels-Housing-type">Тип жилья:</legend>
+               	<legend class="selection-hotels-housing-type">Тип жилья:</legend>
                	 <ul class="selection-hotels-list">
                	   <li>
                	    <label for="hotel">
@@ -78,9 +81,9 @@
              <span class="find-span">Найдено:3</span>
              <span class="sorting-span">Сортировка:</span>
              <ul class="sorting-items">
-               <li><a href="#" class="sorting-price">по цене</a></li>
+               <li><a href="#" class="sorting-price sorting-active">по цене</a></li>
                <li><a href="#" class="sorting-type">по типу</a></li>
-               <li><a href="#" class="sorting-rating">по по рейтингу</a></li>
+               <li><a href="#" class="sorting-rating ">по рейтингу</a></li>
              </ul>
            </section>
              <article class="options-hotels">
@@ -111,7 +114,7 @@
                    <div class="options-hotels-price">от 3000р.</div>
                   <a class="options-btn-left" href="#">Подробнее</a>
                   <a class="options-btn-right" href="#">Забронировать</a>
-                  <span class="optcions-hotels-rating">Рейтинг: 8,9</span>
+                  <span class="options-hotels-rating">Рейтинг: 8,9</span>
                </div>
              </article>
              <article class="options-hotels">
@@ -139,9 +142,11 @@
                 </a>
                 <a class="social-btn-yo social-btn" href="#" aria-label="youtube">youtube</a>
               </div>
-                <a href="https://htmlacademy.ru/" class="website" aria-label="Ссылка на сайт разработчика сайтов">website by</a>
-              <div class="footer-logo">
+                <span class="website">website by</span>
+                <div class="footer-logo">
+                <a href="https://htmlacademy.ru/"  aria-label="Сылка на сайт разработчика сайтов">
                <img class="footer-img" src="img/logo-htmlacademy.svg" width="115" height="41"  alt="Логотип компании разработчика сайта">
+               </a>
               </div>
           </footer> 
       </body>

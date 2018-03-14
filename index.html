@@ -3,6 +3,9 @@
        <head>
           <meta charset="utf-8">
            <title>HTML Academy: Седона</title>
+           <link  type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+           <link  href="normalize/normalize.css" rel="stylesheet">
+           <link  href="css/main.css" rel="stylesheet">
        </head>
      <body>
        <header class="main-header">
@@ -23,7 +26,7 @@
         <main class="container">
          <h1 class="visually-hidden">Седона лучшее место на земле!!!</h1>
           <section class="main-logos">
-             <img src="img/inscriptions-against-the-background-of-mountains.png" width="458" height="352" alt="inscriptions against the-background of-mountains">  
+            <img src="img/inscriptions-against-the-background-of-mountains.png" width="458" height="352" alt="inscriptions against the-background of-mountains">  
              <div class="main-text">
                 <h2>Седона — небольшой городок в Аризоне,<br> 
                   заслуживающий большего!</h2>
@@ -107,14 +110,21 @@
                 </a>
                 <a class="social-btn-yo social-btn" href="#" aria-label="youtube">youtube</a>
               </div>
-                <a href="https://htmlacademy.ru/" class="website" aria-label="Сылка на сайт разработчика сайтов">website by</a>
-              <div class="footer-logo">
+                <span class="website">website by</span>
+                <div class="footer-logo">
+                <a href="https://htmlacademy.ru/"  aria-label="Сылка на сайт разработчика сайтов">
                <img class="footer-img" src="img/logo-htmlacademy.svg" width="115" height="41"  alt="Логотип компании разработчика сайта">
+               </a>
               </div>
+              
           </footer> 
           
           <section class="popup">
-            <h2>Поиск гостиницы в седоне</h2>
+            <a href="#">
+            <div class="popup-header">
+              <h2>Поиск гостиницы в седоне</h2>
+            </div>
+            </a>
             <form class="popup-forma" action="https://echo.htmlacademy.ru" method="post">
               <ul class="popup-item">
                 <li>
