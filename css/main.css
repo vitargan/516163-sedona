@@ -1,27 +1,9 @@
 	body {
 		font-family: "PT Sans", Arial, sans-serif;
 		text-transform: uppercase;
-		color:#000000;
-		background-color: #f2f2f2;
 	}
-	h2,h3 {
-		font-size: 21px;
-		line-height: 26px;
-	}
-	
-	p,b {
-		font-size: 14px;
-		line-height: 21px;
-		color: #333333;
-		font-weight: normal;
-
-		}
 	a {
-		text-decoration: none;
-		color: #000000;
-	}
-	ul {
-		list-style: none;
+	    text-decoration: none 
 	}
 	.content-header {
 		background-color: #ffffff;
@@ -30,6 +12,10 @@
 		font-size: 14px;
 		line-height: 26px;
 		font-weight: bold;
+		color: #000000;
+	}
+	.header-nav {
+		list-style: none;
 	}
 	.nav-item:hover {
 		color: #81b3d2;
@@ -49,11 +35,34 @@
 	}
 	.main-text p {
 		color: #333333;
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.main-text h2 {
+		font-size: 21px;
+		line-height: 26px;
+		font-weight: bold;
 	}
 	.advantages-block-item {
 		background-color: #81b3d2;
 	}
-	.advantages-block-item h3,b,p {
+	.advantages-block-item h3 {
+		color: #ffffff;
+		font-size: 21px;
+		line-height: 26px;
+		font-weight: bold;
+	}
+	.advantages-block-item p {
+		font-size: 14px;
+		line-height: 21px;
+		font-weight: normal;
+		color: #ffffff;
+
+	}
+	.advantages-block-item b {
+		font-size: 14px;
+		line-height: 21px;
+		font-weight: normal;
 		color: #ffffff;
 	}
 	.comfort-services {
@@ -61,18 +70,25 @@
 	}
 	.comfort-services p {
 		color: #333333;
+		font-size: 14px;
+		line-height: 21px;
 	}
 	.travel-date-item {
 		background-color: #eeeeee;
 	}
     .travel-date-item p {
     	color: #333333;
+    	font-size: 14px;
+		line-height: 21px;
+    }
+    .travel-date-item h3 {
+    	font-size: 21px;
+		line-height: 26px;
+		font-weight: bold;
     }
     footer {
     	background-color: #ffffff;
     }
-    
-
     .visitsedona  {
     	font-weight: bold;
     }
@@ -82,6 +98,9 @@
     }
     .popup {
     	background-color: #ffffff;
+    }
+    .popup-item {
+    	list-style: none;
     }
     .popup-header {
     	background-color: #766357;
@@ -131,6 +150,9 @@
     	background-size: 1200px 562px;
     	background-color: #cacaca;
     }
+    .selection-hotels-list	{
+    	list-style: none;
+    }
     .selection-hotels legend {
     	font-size: 16px;
     	line-height: 21px;
@@ -168,6 +190,9 @@
     	font-size: 12px;
     	line-height: 18px;
     }
+    .sorting-items {
+    	list-style: none;
+    }
     .sorting-items a {
     	font-size: 12px;
     	line-height: 18px;
@@ -183,6 +208,11 @@
     }
     .sorting-active {
     	color: #81b3d2;
+    }
+    .hotel-name h3 {
+    	font-size: 21px;
+		line-height: 26px;
+		font-weight: bold;
     }
     .hotel-name h3:hover {
     	color: #81b3d2;
@@ -201,6 +231,7 @@
     	font-size: 14px;
     	line-height: 21px;
     	font-weight: bold;
+    	text-decoration: none;
     	color: #ffffff;
     	background-color: #81b3d2;
     }
@@ -208,6 +239,7 @@
     	font-size: 14px;
     	line-height: 21px;
     	font-weight: bold;
+    	text-decoration: none;
     	color: #ffffff;
     	background-color: #766357;
     }
