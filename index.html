@@ -13,9 +13,9 @@
         <h2 class="visually-hidden">Меню сайта</h2>
          <nav class="content-header">
             <ul class="header-nav">
-              <li><a class="nav-item" href="#">Информация</a></li>
-              <li><a class="nav-item" href="#">Фото и видео</a></li>
-              <li><a class="nav-item" href="#">Карта штата</a></li>
+              <li><a class="nav-item nav-information" href="#">Информация</a></li>
+              <li><a class="nav-item nav-foto-video" href="#">Фото и видео</a></li>
+              <li><a class="nav-item nav-map" href="#">Карта штата</a></li>
               <li><a class="nav-item" href="inner.html">Гостиницы</a></li>
            </ul>
             <div class="header-logo">
@@ -51,7 +51,7 @@
           <section class="comfort">
               <div class="comfort-services icon-home">
                 <h3>Жилье</h3>
-                <p>Рекомендуем пожить в настоящем мотеле,<br>  все как в кино!</p>
+                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </div>
               <div class="comfort-services icon-food">
                 <h3>Еда</h3>
@@ -59,7 +59,7 @@
               </div>
               <div class="comfort-services icon-souvenirs">
                 <h3>Сувениры</h3>
-                <p>Не только китайского,<br> но и местного производства!</p>
+                <p>Не только китайского, но и местного производства!</p>
               </div>
           </section>
           <section class="advantages-block">
@@ -81,7 +81,7 @@
               <div class="advantages-block-item advantages-lower">
                 <h3>Красивая дорога</h3>
                 <b>— №4 —</b>
-                <p>Ехать в Седону из Лас-Вегаса совсем не 
+                <p>Ехать в Седону из Лас-Вегаса совсем  
                  не скучно!
 	            </div>
 	            <div class="advantages-block-item advantages-lower">
@@ -129,21 +129,21 @@
             <form class="popup-forma" action="https://echo.htmlacademy.ru" method="post">
               <ul class="popup-item">
                 <li>
-                 <label for="arrival-date">дата заезда:
+                 <label for="arrival-date" class="popup-date">дата заезда:
                   <input type="date" id="arrival-date" name="arrival-date" value="24.04.2017">
                  </label>
                </li>
                <li>
-                <label for="date-departure">дата выезда:
+                <label for="date-departure" class="popup-date">дата выезда:
                   <input type="date" id="date-departure" name="departure-date" value="04.07.2017"> 
                 </label>
                </li>
               </ul>
-              <label for="adults">Взрослые:
-                <input type="number" id="adults" name="adults">
+              <label for="adults" class="popup-adults">Взрослые:
+                <input type="number" id="adults" name="adults" class="input-adults">
               </label> 
-              <label for="children">Дети:
-                <input type="number" id="children" name="children">
+              <label for="children" class="popup-children">Дети:
+                <input type="number" id="children" name="children" class="input-children">
               </label>
               <button class="popup-button" type="submit">Найти</button>
              </form>

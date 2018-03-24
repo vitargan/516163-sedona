@@ -12,6 +12,7 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: 1200px;
+		position: relative;
 
 	}
 	.visually-hidden {
@@ -22,6 +23,7 @@
 		background-color: #ffffff;
 		display: flex;
 	    justify-content: space-around;
+	    
 	}
 	.content-header a {
 		font-size: 14px;
@@ -38,11 +40,23 @@
 	    min-height: 55px;
 	    padding: 0;
 	    margin: 0;
-	    padding-top: 18px;
+	    padding-top: 14px;
 	    box-sizing: border-box;
+	}
+	.nav-foto-video {
+		margin-right: 249px;
+		margin-left: -10px;
+
+	}
+	.nav-information {
+		margin-right: -6px;
+	}
+	.nav-map {
+		margin-left: -22px;
 	}
 	.header-logo {
 		position: absolute;
+		z-index: 100;
 	}
 		
 	.nav-item:hover {
@@ -55,14 +69,18 @@
 		color: #766357;
 	}
 	
-	
+	.container {
+		position: relatie;
+	}
 	.main-logos {
 		background-image: url(../img/background.jpg);
 		background-repeat: no-repeat;
-		display: flex;
+		background-position: 0 -55px;
+        display: flex;
 	    justify-content:center;
 	    flex-direction: column;
-	    min-height: 500px;
+	    min-height: 510px;
+
 	}
 
 	.main-logos::after {
@@ -72,7 +90,7 @@
 		height: 57px;
 		position: absolute;
 		background: url(../img/shape.png);
-		top:515px;
+		top:505px;
 	}
     .main-logos img {
     	margin-left: auto;
@@ -85,7 +103,8 @@
 		background-color: #ffffff;
 		text-align: center;
 		min-height: 170px;
-		padding-top: 55px;
+		padding-top: 14px;
+		margin-top: -10px;
 		box-sizing: border-box;
 	}
 	.main-text p {
@@ -93,12 +112,14 @@
 		font-size: 14px;
 		line-height: 21px;
 		margin-bottom: 50px;
+
 	}
 	.main-text h2 {
 		font-size: 21px;
 		line-height: 26px;
 		font-weight: bold;
-		padding-bottom: 35px;
+		padding-top: 32px;
+		padding-bottom: 12px;
 		box-sizing: border-box;
 	}
 	.advantages {
@@ -117,7 +138,7 @@
 		min-height: 255px;
 		box-sizing: border-box;
 		text-align: center;
-		padding-top: 45px;
+		padding-top: 25px;
 
 		
 	}
@@ -127,14 +148,19 @@
 	.advantages-block-item h3 {
 		color: #ffffff;
 		font-size: 21px;
-		line-height: 26px;
+		line-height: 22px;
 		font-weight: bold;
+		text-align: center;
+		display: block;
+		width: 151px;
+		margin-left: 123px;
 	}
 	.advantages-block-item p {
 		font-size: 14px;
 		line-height: 21px;
 		font-weight: normal;
 		color: #ffffff;
+		margin-top: 21px;
 
 	}
 	.advantages-block-item b {
@@ -142,15 +168,25 @@
 		line-height: 21px;
 		font-weight: normal;
 		color: #ffffff;
+		display: block;
+		 margin-top: 26px;
 	}
+	
+	
 	.advantages-lower {
 		background-color: #eeeeee;
     }
     .advantages-lower h3{
     	color: #000000;
+    	margin-top: 22px;
     }
     .advantages-lower p {
     	color: #333333;
+    	display: block;
+    	width: 280px;
+    	text-align: center;
+    	margin-left: 60px;
+    	margin-top: 19px;
     }
     .advantages-lower b {
     	color: #333333;
@@ -172,11 +208,22 @@
 		padding-top: 160px;
 		position: relative;
 	}
+	.comfort-services h3 {
+		margin-top: 3px;
+		font-weight: bold;
+		font-size: 21px;
+	}
 
 	.comfort-services p { 
 		color: #333333;
 		font-size: 14px;
 		line-height: 21px;
+		margin-top: 20px;
+		text-align: center;
+		display: block;
+		width: 290px;
+		margin-left: 53px;
+		
 
 	}
 	.icon-home::before {
@@ -221,8 +268,7 @@
 	}
 	.travel-date-item {
 		background-color: #ffffff;
-		margin-top: 50px;
-		text-align: center;
+	    text-align: center;
 	}
     .travel-date-item p {
     	color: #333333;
@@ -230,23 +276,38 @@
 		line-height: 21px;
     }
     .travel-date-item h3 {
-    	font-size: 21px;
-		line-height: 26px;
+    	font-size: 30px;
+		line-height: 36px;
 		font-weight: bold;
+		margin-top: 50px;
     }
     .map {
     	line-height: 0;
+    	max-height: 474px;
+    	
     }
+   
     footer {
-    	background-color: #ffffff;
+    	background-color: rgba(255, 255, 255, 0.9);
     	min-height: 120px;
+    	width: 1200px;
     	display: flex;
-    	justify-content: space-around;
+        justify-content: space-around;
     	align-items: center;
+    	position: absolute;
+    	z-index: 100;
+    	bottom: -120px;
+    	left: 0;
+    	
+    }
+    .social-footer {
+    	margin-left: 78px;
+    	margin-top: 11px;
+    	width: 200px;
     }
     .social-footer a {
-    	width: 50px;
-    	height: 45px;
+    	width: 45px;
+    	height: 48px;
     	background-color: #81b3d2;
     	display: inline-block;
     	margin-right: 6px;
@@ -275,6 +336,9 @@
     }
     .visitsedona  {
     	font-weight: bold;
+    	font-size: 21px;
+    	line-height: 26px;
+    	margin-left: 35px;
     }
     .website {
     	font-size: 14px;
@@ -284,6 +348,7 @@
     .footer-logo {
     	display: flex;
     	align-items: center;
+    	margin-top: 5px;
     }
     
     .footer-logo path:hover {
@@ -296,23 +361,85 @@
    
     .popup {
     	background-color: #ffffff;
+    	position: absolute;
+    	z-index: 1000;
+    	top: 1933px;
+    	margin: 0;
+    	padding: 0;
+    	box-sizing: border-box;
+    	width: 569px;
+    	height: 482px;
     }
     .popup-item {
     	list-style: none;
+    	margin: 0;
+    	padding-left: 58px;
     }
     .popup-header {
     	background-color: #766357;
     	color: #ffffff;
+    	height: 86px;
+    	text-align: center;
+    	box-sizing: border-box;
+    	margin-top: 0px;
+    	margin-bottom: 55px;
     }
-  
-    input {
+    .popup-header h2 {
+    	margin: 0;
+    	padding-top: 30px;
+    	font-size: 21px;
+    	line-height: 26px;
+
+    }
+    .popup label {
+    	font-size: 14px;
+    	line-height: 26px;
+    	font-weight: bold;
+    }
+     .popup-adults {
+    	padding-left: 56px;
+    	
+    }
+    .popup-children {
+    	padding-left: 50px;
+    }
+    input[type="date"] {
     	background-color: #f2f2f2;
     	border: none;
+    	width: 345px;
+    	height: 38px;
+    	margin-left: 20px;
+    	margin-bottom: 30px;
+    	
+    }
+    input[type="number"] {
+    	background-color: #f2f2f2;
+    	border: none;
+    	width: 113px;
+    	height: 38px;
+    	
+    }
+    .input-adults {
+    	margin-left: 40px;
+    }
+    .input-children {
+    	margin-left: 24px;
     }
     .popup-button {
     	color: #ffffff;
+    	font-size: 21px;
+    	line-height: 26px;
+    	text-transform: uppercase;
+    	font-weight: bold;
     	background-color: #81b3d2;
     	border: none;
+    	margin-top: 52px;
+    	width: 457px;
+    	height: 58px;
+    	margin-left: 58px;
+
+
+
     }
     .options-btn-right:hover,.popup-header:hover {
     	background-color: #604e43;
@@ -340,7 +467,7 @@
     .selection-hotels {
     	margin: 0;
     	padding: 0;
-    	min-height: 220px;
+    	min-height: 217px;
         background: url(../img/filter-background.jpg )  no-repeat;
     	background-size: 1200px 562px;
     	background-color: #cacaca;
@@ -350,15 +477,16 @@
     	margin: 0;
     	padding: 0;
     	display: flex;
-    	padding-top: 25px;
+    	padding-top: 30px;
     	box-sizing: border-box;
 
     }
     .selection-hotels-list	{
     	list-style: none;
-    	width: 250px;
+    	width: 200px;
     	margin-top: 20px;
-    	padding-left: 38px;
+    	padding-left: 39px;
+    	margin-right: 16px;
     	
     }
     .selection-hotels-list li {
@@ -372,6 +500,7 @@
     .fieldset-infrastructure-housing {
     	padding-left: 70px;
     	margin: 0;
+    	
     }
     .selection-hotels legend {
     	font-size: 16px;
@@ -395,7 +524,7 @@
         position: relative;
         cursor: pointer;
     }
-     .selection-hotels label::before {
+     .selection-hotels-list label::before {
         content: "";
         position: absolute;
         top: -3px;
@@ -422,12 +551,15 @@
         
     }
     .cost {
-    	margin-bottom: 9px;
+    	margin-bottom: 6px;
+    	color: #ffffff;
+    	font-weight: bold;
+    	text-align: left;
     }
     .cost-per-day {
     	margin-left: auto;
     	margin-right: 70px;
-    	width: 330px;
+    	width: 320px;
     	font-size: 16px;
         line-height: 21px;
         text-align: center;
@@ -469,7 +601,7 @@
     .price-controls .min-price,
     .price-controls .max-price {
         width: 90px;
-        padding-left: 65px;
+        padding-left: 50px;
     }
 
     .price-controls input {
@@ -530,12 +662,14 @@
     	font-size: 14px;
     	line-height: 21px;
     	color: #ffffff;
+    	text-transform: uppercase;
     	border: 2px solid #ffffff;
     	background: transparent;
-    	padding-left: 35px;
-    	padding-right: 35px;
-    	padding-top: 7px;
-    	padding-bottom: 7px;
+    	padding-left: 32px;
+    	padding-right: 32px;
+    	padding-top: 6px;
+    	padding-bottom: 6px;
+    	margin-right: 12px;
     	box-sizing: border-box; 
     }
     .cost-btn:hover {
@@ -561,15 +695,19 @@
     	line-height: 26px;
     	font-weight: bold;
     	padding-left: 70px;
+    	white-space: nowrap;
+    	width: 110px;
     }
     .sorting-span {
     	font-size: 12px;
     	line-height: 18px;
-    	margin-left: 50px;
+    	margin-left: 57px;
+        margin-top: 7px;
     }
     .sorting-items {
     	list-style: none;
         width: 100%;
+        padding-top: 1px;
     	display: flex;
     	justify-content: space-between;
     }
@@ -580,9 +718,7 @@
     	border-bottom: 1px dashed #81b3d2;
     	margin-right: 30px;
     }
-    
-
-    }
+     
     .sorting-items a:hover {
     	border-bottom: 1px dashed #81b3d2;
     	color: #81b3d2;
@@ -631,7 +767,7 @@
     	margin-top: 30px;
     }
     .block-options-hotels {
-    	margin-left: 30px;
+    	margin-left: 32px;
     	position: relative;
     }
     .hotel-name h3 {
@@ -649,7 +785,7 @@
     }
     .options-hotels-items {
     	display: flex;
-    	margin-top: 11px;
+    	margin-top: 8px;
     	margin-bottom: 8px;
     	width: 180px;
 
@@ -684,11 +820,14 @@
     	font-weight: bold;
     	text-decoration: none;
     	color: #ffffff;
+    	text-align: center;
+    	vertical-align: middle;
     	background-color: #81b3d2;
+    	margin-top: 6px;
     	padding-left: 16px;
     	padding-right: 16px;
-    	padding-top: 5px;
-    	padding-bottom: 5px;
+    	padding-top: 3px;
+    	padding-bottom: 3px;
     	box-sizing: border-box;
         
      }
@@ -697,13 +836,16 @@
     	line-height: 21px;
     	font-weight: bold;
     	text-decoration: none;
+    	text-align: center;
+    	vertical-align: middle;
     	color: #ffffff;
     	background-color: #766357;
-    	margin-left: 5px;
+    	margin-left: 8px;
+    	margin-top: 6px;
     	padding-left: 16px;
     	padding-right: 16px;
-    	padding-top: 5px;
-    	padding-bottom: 5px;
+    	padding-top: 3px;
+    	padding-bottom: 3px;
     	
 
     }
@@ -715,8 +857,9 @@
     	text-align: center;
     	background-color: #f2f2f2;
     	margin-left: auto;
-    	margin-right: 70px;
-    	padding-top: 5px;
+    	margin-right: 73px;
+    	margin-top: 4px;
+    	padding-top: 7px;
         width: 110px;
         
     }

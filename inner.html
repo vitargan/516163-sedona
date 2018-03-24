@@ -15,7 +15,7 @@
          <nav class="content-header">
             <ul class="header-nav">
               <li><a class="nav-item" href="#">Информация</a></li>
-              <li><a class="nav-item" href="#">Фото и видео</a></li>
+              <li><a class="nav-item nav-foto-video" href="#">Фото и видео</a></li>
               <li><a class="nav-item" href="#">Карта штата</a></li>
               <li><a class="nav-item nav-item-active">Гостиницы</a></li>
            </ul>
@@ -64,10 +64,10 @@
                   </ul>
                </fieldset>
                <fieldset class="cost-per-day">
-                 <legend class="cost">Стоимость в сутки (Р):</legend>
+                 <div class="cost">Стоимость в сутки (Р):</div>
                  <div class="price-controls">
-                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                  <label class="min-price label-cost">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price label-cost">до <input type="text" name="max-price" value="3000"></label>
                  </div>
                   <div class="range-controls">
                     <div class="scale">
@@ -82,7 +82,7 @@
            </section>
            <section class="examples-hotels">
             <section class="sorting">
-             <span class="find-span">Найдено:3</span>
+             <span class="find-span">Найдено: 3</span>
              <span class="sorting-span">Сортировка:</span>
              <ul class="sorting-items">
                <li><a href="#" class="sorting-price sorting-active">по цене</a></li>
