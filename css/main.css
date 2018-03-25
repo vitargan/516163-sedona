@@ -263,23 +263,43 @@
 		padding: 0;
 		background-color: #ffffff;
 		min-height: 290px;
-		justify-content: center;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
 		
 	}
 	.travel-date-item {
 		background-color: #ffffff;
 	    text-align: center;
+	    
+	    
 	}
     .travel-date-item p {
     	color: #333333;
     	font-size: 14px;
 		line-height: 21px;
+		
     }
     .travel-date-item h3 {
     	font-size: 30px;
 		line-height: 36px;
 		font-weight: bold;
-		margin-top: 50px;
+		margin-top: 54px;
+        margin-bottom: 26px;
+    }
+    .travel-date-btn {
+
+    	background-color: #766357;
+    	color: #ffffff;
+    	height: 84px;
+    	width: 569px;
+    	padding: 0;
+    	text-align: center;
+    	box-sizing: border-box;
+    	border: none;
+        text-transform: uppercase;
+    	font-size: 21px;
+    	line-height: 26px;
     }
     .map {
     	line-height: 0;
@@ -292,7 +312,7 @@
     	min-height: 120px;
     	width: 1200px;
     	display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     	align-items: center;
     	position: absolute;
     	z-index: 100;
@@ -301,7 +321,7 @@
     	
     }
     .social-footer {
-    	margin-left: 78px;
+    	margin-left: 74px;
     	margin-top: 11px;
     	width: 200px;
     }
@@ -310,7 +330,7 @@
     	height: 48px;
     	background-color: #81b3d2;
     	display: inline-block;
-    	margin-right: 6px;
+    	margin-right: 5px;
     }
     .social-footer a:hover {
     	background-color: #689fc1;
@@ -338,7 +358,7 @@
     	font-weight: bold;
     	font-size: 21px;
     	line-height: 26px;
-    	margin-left: 35px;
+    	margin-left: 132px;
     }
     .website {
     	font-size: 14px;
@@ -349,6 +369,7 @@
     	display: flex;
     	align-items: center;
     	margin-top: 5px;
+    	margin-right: 99px;
     }
     
     .footer-logo path:hover {
@@ -363,33 +384,36 @@
     	background-color: #ffffff;
     	position: absolute;
     	z-index: 1000;
-    	top: 1933px;
+    	top: 2164px;
     	margin: 0;
     	padding: 0;
+    	left: 1%; 
+        right: 1%;
+        margin: auto;
     	box-sizing: border-box;
     	width: 569px;
-    	height: 482px;
+    	height: 395px;
     }
     .popup-item {
     	list-style: none;
     	margin: 0;
     	padding-left: 58px;
+    	position: relative;
     }
-    .popup-header {
-    	background-color: #766357;
-    	color: #ffffff;
-    	height: 86px;
-    	text-align: center;
-    	box-sizing: border-box;
-    	margin-top: 0px;
-    	margin-bottom: 55px;
+    .popup-forma {
+    	margin-top: 60px;
     }
-    .popup-header h2 {
-    	margin: 0;
-    	padding-top: 30px;
-    	font-size: 21px;
-    	line-height: 26px;
+    
 
+   
+    input::before {
+    	content: "";
+        position: absolute;
+        left: 485px;
+        z-index: 1;
+        background: url(../img/calendar.svg) no-repeat;
+        width: 24px;
+        height: 24px;
     }
     .popup label {
     	font-size: 14px;
@@ -410,6 +434,7 @@
     	height: 38px;
     	margin-left: 20px;
     	margin-bottom: 30px;
+
     	
     }
     input[type="number"] {
@@ -417,6 +442,7 @@
     	border: none;
     	width: 113px;
     	height: 38px;
+    	text-align: center;
     	
     }
     .input-adults {
@@ -441,10 +467,10 @@
 
 
     }
-    .options-btn-right:hover,.popup-header:hover {
+    .options-btn-right:hover,.travel-date-btn:hover {
     	background-color: #604e43;
     }
-    .options-btn-right:active,.popup-header:active {
+    .options-btn-right:active,.travel-date-btn:active {
     	background-color: #503e33;
     	color: rgba(255, 255, 255, 0.3);
     }
@@ -477,7 +503,7 @@
     	margin: 0;
     	padding: 0;
     	display: flex;
-    	padding-top: 30px;
+    	padding-top: 28px;
     	box-sizing: border-box;
 
     }
@@ -551,7 +577,7 @@
         
     }
     .cost {
-    	margin-bottom: 6px;
+    	margin-bottom: 4px;
     	color: #ffffff;
     	font-weight: bold;
     	text-align: left;
@@ -731,10 +757,15 @@
     	height: 11px;
     	display: flex;
     	margin-left: auto;
-    	padding-top: 10px;
-    	padding-right: 70px;
-
-
+    	padding-top: 6px;
+    	padding-right: 65px;
+    }
+    .sorting-active:first-child {
+    	border: none;
+    	color: #81b3d2 ;
+    }
+    .sorting-active:first-child:hover {
+    	border: none;
     }
     .arrow-up {
     	background: url(../img/icon-up-dir.svg) no-repeat;
@@ -791,13 +822,26 @@
 
     }
     .options-hotels-star {
-    	width: 80px;
+    	
     	height: 17px;
     	background: url(../img/star.svg) space;
     	position: absolute;
     	left: 810px;
-    	top: 30px;
+    	top: 28px;
     }
+    .amara-resort-star {
+    	width: 83px;
+    	left: 804px;
+    }
+    .desert-quail-star {
+    	width: 60px;
+    	left: 830px;
+    }
+    .villas-poco-diablo-star {
+    	width: 38px;
+    	left: 853px;
+    }
+
    .options-hotels-price {
    	    margin-left: auto;
     }
@@ -859,7 +903,7 @@
     	margin-left: auto;
     	margin-right: 73px;
     	margin-top: 4px;
-    	padding-top: 7px;
+    	padding-top: 3px;
         width: 110px;
         
     }
