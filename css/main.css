@@ -13,6 +13,7 @@
 		margin-right: auto;
 		width: 1200px;
 		position: relative;
+		box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 
 	}
 	.visually-hidden {
@@ -57,6 +58,8 @@
 	.header-logo {
 		position: absolute;
 		z-index: 100;
+		top: 0;
+		left: 531px;
 	}
 		
 	.nav-item:hover {
@@ -128,11 +131,8 @@
 	}
 	.advantages-block {
         display: flex;
-       
-	}
-
-	
-	.advantages-block-item {
+    }
+    .advantages-block-item {
 		background-color: #81b3d2;
 		width: 400px;
 		min-height: 255px;
@@ -272,7 +272,6 @@
 		background-color: #ffffff;
 	    text-align: center;
 	    
-	    
 	}
     .travel-date-item p {
     	color: #333333;
@@ -288,8 +287,7 @@
         margin-bottom: 26px;
     }
     .travel-date-btn {
-
-    	background-color: #766357;
+        background-color: #766357;
     	color: #ffffff;
     	height: 84px;
     	width: 569px;
@@ -306,6 +304,9 @@
     	max-height: 474px;
     	
     }
+    iframe {
+    	border: none;
+    }
    
     footer {
     	background-color: rgba(255, 255, 255, 0.9);
@@ -318,6 +319,7 @@
     	z-index: 100;
     	bottom: -120px;
     	left: 0;
+    	box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
     	
     }
     .social-footer {
@@ -357,6 +359,7 @@
     .visitsedona  {
     	font-weight: bold;
     	font-size: 21px;
+    	color: #151515;
     	line-height: 26px;
     	margin-left: 132px;
     }
@@ -398,55 +401,62 @@
     	list-style: none;
     	margin: 0;
     	padding-left: 58px;
-    	position: relative;
+
+    	
     }
     .popup-forma {
-    	margin-top: 60px;
-    }
-    
-
-   
-    input::before {
-    	content: "";
-        position: absolute;
-        left: 485px;
-        z-index: 1;
-        background: url(../img/calendar.svg) no-repeat;
-        width: 24px;
-        height: 24px;
+        margin-top: 60px;
     }
     .popup label {
     	font-size: 14px;
     	line-height: 26px;
     	font-weight: bold;
+    	position: relative;
+
     }
      .popup-adults {
     	padding-left: 56px;
+    	position: relative;
     	
     }
     .popup-children {
     	padding-left: 50px;
+
     }
-    input[type="date"] {
+    .popup-date-input {
     	background-color: #f2f2f2;
     	border: none;
     	width: 345px;
     	height: 38px;
-    	margin-left: 20px;
+    	padding: 0;
+        margin-left: 18px;
     	margin-bottom: 30px;
-
     	
     }
-    input[type="number"] {
+    
+    .popup-number-adults {
     	background-color: #f2f2f2;
     	border: none;
     	width: 113px;
     	height: 38px;
+    	padding: 0;
+    	margin-left: 39px;
     	text-align: center;
+    	position: relative;
+
     	
     }
+    .popup-number-children {
+    	background-color: #f2f2f2;
+    	border: none;
+    	width: 113px;
+    	height: 38px;
+    	padding: 0;
+    	margin-left: 24px;
+    	text-align: center;
+    }
     .input-adults {
-    	margin-left: 40px;
+    	margin-left: 24px;
     }
     .input-children {
     	margin-left: 24px;
@@ -459,14 +469,37 @@
     	font-weight: bold;
     	background-color: #81b3d2;
     	border: none;
+    	box-sizing: border-box;
     	margin-top: 52px;
     	width: 457px;
     	height: 58px;
-    	margin-left: 58px;
-
-
+    	margin-left: 57px;
+    	padding-left: 4px;
+    }
+    .popup-calendar-arrival {
+    	position: absolute;
+    	left: 484px;
+        top: 69px;
 
     }
+    .popup-calendar-departure {
+    	position: absolute;
+    	left: 484px;
+    	top: 136px;
+
+    }
+    .popup-calendar-arrival path, .popup-calendar-departure path {
+    	fill: #cacaca;
+    }
+
+    .popup-calendar-arrival path:active, .popup-calendar-departure path:active {
+    	fill: #81b3d2;
+
+    }
+    .popup-calendar-arrival path:hover, .popup-calendar-departure path:hover {
+    	fill: #000000;
+    }
+    
     .options-btn-right:hover,.travel-date-btn:hover {
     	background-color: #604e43;
     }
@@ -474,7 +507,43 @@
     	background-color: #503e33;
     	color: rgba(255, 255, 255, 0.3);
     }
-  
+    .minus {
+    	position: absolute;
+    	left: 180px;
+        top: -9px;
+    	color: #a9a9a9;
+    	font-size: 40px;
+    }
+    .plus {
+        position: absolute;
+        left: 255px;
+        top: -5px;
+        color: #a9a9a9;
+        font-size: 27px;
+    }
+    .minus-2 {
+    	position: absolute;
+        left: 126px;
+        top: -8px;
+        color: #a9a9a9;
+    	font-size: 40px;
+
+    }
+    .plus-2 {
+    	position: absolute;
+        left: 201px;
+        top: -5px;
+        color: #a9a9a9;
+        font-size: 27px;
+    }
+
+    .minus:hover, .plus:hover, .minus-2:hover, .plus-2:hover {
+        color: #000000;
+    }
+
+    .minus:active, .plus:active, .minus-2:active, .plus-2:active {
+        color: #81b3d2;
+    }
     input:hover {
     	background-color: #ebebeb;
     }
@@ -503,7 +572,7 @@
     	margin: 0;
     	padding: 0;
     	display: flex;
-    	padding-top: 28px;
+    	padding-top: 30px;
     	box-sizing: border-box;
 
     }
@@ -652,7 +721,6 @@
     .range-controls .bar {
         width: 80%;
         height: 2px;
-
         background: #ffffff;
     }
 
@@ -734,6 +802,7 @@
     	list-style: none;
         width: 100%;
         padding-top: 1px;
+        margin-right: 434px;
     	display: flex;
     	justify-content: space-between;
     }
@@ -753,10 +822,12 @@
     	color: #000000;
     }
     .sorting-items-arrow {
+    	list-style: none;
     	width: 40px;
     	height: 11px;
     	display: flex;
     	margin-left: auto;
+    	margin-right: 9px;
     	padding-top: 6px;
     	padding-right: 65px;
     }
@@ -785,6 +856,7 @@
     	display: flex;
     	flex-direction: column;
     	box-sizing: border-box;
+    	background-color: #fefefe;
     }
     .options-hotels {
     	min-height: 150px;
@@ -805,6 +877,7 @@
     	font-size: 21px;
 		line-height: 26px;
 		font-weight: bold;
+		color: #151515;
 		margin-bottom: 0px;
         margin-top: 25px;
     }
@@ -903,7 +976,7 @@
     	margin-left: auto;
     	margin-right: 73px;
     	margin-top: 4px;
-    	padding-top: 3px;
+    	padding-top: 5px;
         width: 110px;
         
     }
