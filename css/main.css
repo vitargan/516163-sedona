@@ -302,6 +302,8 @@
 	.travel-date-item {
 		background-color: #ffffff;
 	    text-align: center;
+       
+
 	    
 	}
     .travel-date-item p {
@@ -331,11 +333,13 @@
         font-weight: bold;
     	font-size: 21px;
     	line-height: 26px;
+
     }
     .map {
     	line-height: 0;
     	max-height: 474px;
-    	position: relative;
+        position: relative;
+    	
     	
     	
     }
@@ -438,8 +442,8 @@
     	z-index: 1000;
     	margin: 0;
     	padding: 0;
+    	bottom: 169px;
     	top: 2169px;
-    	position: absolute;
         left: 50%;
         margin-left: -284px;
         -webkit-box-sizing: border-box;
