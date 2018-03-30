@@ -262,7 +262,7 @@
 		margin: 0;
 		padding: 0;
 		background-color: #ffffff;
-		min-height: 290px;
+		min-height: 293px;
 		justify-content: space-between;
 		flex-direction: column;
 		align-items: center;
@@ -296,6 +296,7 @@
     	box-sizing: border-box;
     	border: none;
         text-transform: uppercase;
+        font-weight: bold;
     	font-size: 21px;
     	line-height: 26px;
     }
@@ -324,7 +325,7 @@
     }
     .social-footer {
     	margin-left: 74px;
-    	margin-top: 11px;
+    	margin-top: 23px;
     	width: 200px;
     	height: 65px;
     }
@@ -393,7 +394,7 @@
     	background-color: #ffffff;
     	position: absolute;
     	z-index: 1000;
-    	top: 2164px;
+    	top: 2167px;
     	margin: 0;
     	padding: 0;
     	left: 1%; 
@@ -411,7 +412,8 @@
     	
     }
     .popup-forma {
-        margin-top: 60px;
+        margin-top: 56px;
+        padding: 0;
     }
     .popup label {
     	font-size: 14px;
@@ -426,7 +428,8 @@
     	
     }
     .popup-children {
-    	padding-left: 50px;
+    	margin-right: 24px;
+        padding-left: 40px;
 
     }
     .popup-date-input {
@@ -439,26 +442,32 @@
     	margin-bottom: 30px;
     	
     }
+    .popup-number {
+    	display: flex;
+    	list-style: none;
+    	display: block;
+    	margin: 0;
+    	padding: 0;
+    	height: 38px;
+    }
     
     .popup-number-adults {
     	background-color: #f2f2f2;
     	border: none;
-    	width: 113px;
+    	width: 37px;
     	height: 38px;
     	padding: 0;
-    	margin-left: 39px;
     	text-align: center;
-    	position: relative;
+    	
 
     	
     }
     .popup-number-children {
     	background-color: #f2f2f2;
     	border: none;
-    	width: 113px;
+    	width: 37px;
     	height: 38px;
     	padding: 0;
-    	margin-left: 24px;
     	text-align: center;
     }
     .input-adults {
@@ -485,19 +494,26 @@
     .popup-calendar-arrival {
     	position: absolute;
     	left: 484px;
-        top: 69px;
+        top: 63px;
         width: 21px;
         height: 22px;
+        padding: 0;
         fill: #cacaca;
+        border: none;
+        background-color: #f2f2f2;
 
     }
     .popup-calendar-departure {
     	position: absolute;
     	left: 484px;
-    	top: 136px;
+    	top: 130px;
     	width: 21px;
         height: 22px;
+        padding: 0;
         fill: #cacaca;
+        border: none;
+        background-color: #f2f2f2;
+
 
     }
     
@@ -519,49 +535,56 @@
     	color: rgba(255, 255, 255, 0.3);
     }
     .minus {
-    	position: absolute;
-    	left: 170px;
-        top: -10px;
+    	
     	width: 38px;
     	height: 38px;
     	padding: 0;
     	background-color: #f2f2f2;
     	border: none;
-    	padding-bottom: 5px;
+    	font-size: 11px;
+    	line-height: 30px;
+    	font-weight: bold;
+    	color: #a9a9a9;
+    	margin-left: 38px;
+    	 vertical-align: middle;
+
+    	
     	
     }
     .plus {
-        position: absolute;
-        left: 245px;
-        top: -10px;
+       
         width: 38px;
     	height: 38px;
     	padding: 0;
     	background-color: #f2f2f2;
     	border: none;
+    	font-size: 11px;
+    	color: #a9a9a9;
+    	font-weight: bold;
+
+    	
        
     }
     .minus-2 {
-    	position: absolute;
-        left: 115px;
-        top: -10px;
+    	
         width: 38px;
     	height: 38px;
     	padding: 0;
     	background-color: #f2f2f2;
     	border: none;
-    	padding-bottom: 5px;
+    	color: #a9a9a9;
+    	font-weight: bold;
 
     }
     .plus-2 {
-    	position: absolute;
-        left: 191px;
-        top: -10px;
+    	
         width: 38px;
     	height: 38px;
     	padding: 0;
     	background-color: #f2f2f2;
     	border: none;
+    	color: #a9a9a9;
+    	font-weight: bold;
     }
     .minus, .minus-2:hover path {
     	fill: #000000;
@@ -900,16 +923,19 @@
     	position: relative;
     	width: 530px;
     }
+    .block-options-hotels h3 {
+        margin-bottom: 7px;
+        margin-top: 26px;
+    }
     
-    
-    .hotel-name h3 {
+    .hotel-name  {
     	font-size: 21px;
 		line-height: 26px;
 		font-weight: bold;
 		color: #151515;
 		margin-top: 0;
 		margin-bottom: 8px;
-		width: 300px;
+		
         padding-top: 25px;
        
     }
