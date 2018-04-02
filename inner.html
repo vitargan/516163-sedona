@@ -4,8 +4,8 @@
           <meta charset="utf-8">
            <title>HTML Academy: Седона</title>
            <link  type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-           <link  href="normalize/normalize.css" rel="stylesheet">
-           <link  href="css/style.min.css" rel="stylesheet">
+           <link  href="css/normalize.css" rel="stylesheet">
+           <link  href="css/main.css" rel="stylesheet">
        </head>
 
       <body>
@@ -34,7 +34,7 @@
               	<legend class="selection-hotels-infrastructure">Инфраструктура:</legend>
               	 <ul class="selection-hotels-list">
               	  <li>
-              	    <input type="checkbox" id="basin" name="basin" value="бассейн"><label for="basin">бассейн</label>
+              	    <input type="checkbox" id="basin" name="basin" value="бассейн" checked><label for="basin">бассейн</label>
                   </li>
                   <li>
                     <input type="checkbox" id="parking" name="parking" value="парковка">
@@ -50,15 +50,15 @@
                	<legend class="selection-hotels-housing-type">Тип жилья:</legend>
                	 <ul class="selection-hotels-list">
                	   <li>
-                    <input type="checkbox" id="hotel" name="hotel" value="гостиница">
+                    <input type="checkbox" id="hotel" name="hotel" value="гостиница" checked>
                	    <label for="hotel">гостиница</label>
                    </li>
                    <li>
-                    <input type="checkbox" id="motel" name="motel" value="мотель">
+                    <input type="checkbox" id="motel" name="motel" value="мотель" checked>
                     <label for="motel">мотель</label>
                    </li>
                    <li>
-                    <input type="checkbox" id="apartments" name="apartments" value="апартаменты">
+                    <input type="checkbox" id="apartments" name="apartments" value="апартаменты" checked>
                     <label for="apartments">апартаменты</label>
                    </li>
                   </ul>
@@ -90,8 +90,8 @@
                <li><a href="#" class="sorting-rating">по рейтингу</a></li>
              </ul>
              <div class="sorting-items-arrow">
-               <a class="arrow-up"></a>
-               <a class="arrow-dir"></a>
+               <a class="arrow-up"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg></a>
+               <a class="arrow-dir active-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg></a>
              </div>
             </section>
             </section>

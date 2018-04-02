@@ -188,7 +188,7 @@
 		font-weight: normal;
 		color: #ffffff;
 		display: block;
-		 margin-top: 26px;
+		margin-top: 26px;
 	}
 	
 	
@@ -379,6 +379,7 @@
     	height: 48px;
     	background-color: #81b3d2;
     	display: inline-block;
+        vertical-align: middle;
     	margin-right: 4px;
     }
     .social-footer a:hover {
@@ -572,7 +573,7 @@
 
     }
     .popup-calendar-arrival:hover path, 
-    .popup-calendar-departure:hover path{
+    .popup-calendar-departure:hover path {
     	fill: #000000;
     }
     .popup-calendar-arrival:active path, 
@@ -905,7 +906,7 @@
     	list-style: none;
         width: 100%;
         padding-top: 1px;
-        margin-right: 434px;
+        margin-right: 475px;
     	display: -webkit-box;
     	display: -ms-flexbox;
     	display: flex;
@@ -927,6 +928,7 @@
     }
     .sorting-items a:active {
     	color: #000000;
+        border: none;
     }
     .sorting-items-arrow {
     	list-style: none;
@@ -937,27 +939,34 @@
     	display: flex;
     	margin-left: auto;
     	margin-right: 9px;
-    	padding-top: 6px;
     	padding-right: 65px;
     }
     .sorting-active:first-child {
     	border: none;
-    	color: #81b3d2 ;
+    	color: #81b3d2;
     }
     .sorting-active:first-child:hover {
     	border: none;
     }
+   
     .arrow-up {
-    	background: url(../img/icon-up-dir.svg) no-repeat;
-    	width: 11px;
-    	height: 11px;
-    	margin-right: 10px;
+        margin-right: 10px;
+
+   }
+   
+    .arrow-up:hover path,  .arrow-dir:hover path {
+       
+       fill: #000000;
     }
-    .arrow-dir {
-        background: url(../img/icon-down-dir.svg) no-repeat;
-    	width: 11px;
-    	height: 11px;
-    }
+    .arrow-up:active path,  .arrow-dir:active path {
+       
+       fill: #81b3d2;
+   }
+   .active-arrow path {
+       fill: #81b3d2;
+
+   }
+
     .sorting-active {
     	color: #81b3d2;
     }
