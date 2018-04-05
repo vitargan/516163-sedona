@@ -344,7 +344,7 @@
         height: 539px;
     	
     }
-    iframe {
+    .map-iframe {
     	border: none;
     }
    
@@ -475,10 +475,6 @@
         transform: translateX(10px);
     }
     }
-
-     
-    
-
     .popup {
         display: none;
     	background-color: #ffffff;
@@ -495,9 +491,6 @@
     	width: 569px;
     	height: 395px;
     }
- 
-    
- 
     .popup-show {
         display: block;
         animation: bounce 0.7s;
@@ -509,9 +502,7 @@
     	list-style: none;
     	margin: 0;
     	margin-bottom: -1px;
-    	padding-left: 58px;
-
-    	
+    	padding-left: 58px;	
     }
     .popup-forma {
         margin-top: 56px;
