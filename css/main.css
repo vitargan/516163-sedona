@@ -339,8 +339,9 @@
     	line-height: 0;
     	max-height: 474px;
         position: relative;
-    	
-    	
+        background: url(../img/map.jpg) no-repeat;
+        width: 1200px;
+        height: 539px;
     	
     }
     iframe {
@@ -474,6 +475,10 @@
         transform: translateX(10px);
     }
     }
+
+     
+    
+
     .popup {
         display: none;
     	background-color: #ffffff;
@@ -490,6 +495,9 @@
     	width: 569px;
     	height: 395px;
     }
+ 
+    
+ 
     .popup-show {
         display: block;
         animation: bounce 0.7s;
